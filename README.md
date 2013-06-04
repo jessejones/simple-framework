@@ -20,7 +20,7 @@ Using Simple is just as easy as the name suggests. After putting a link to simpl
 		</div>	
 	</div>
 
-Usage
+Grid
 ----------------
 
 Simple uses a 12 column, fluid 960 grid that scales gracefully with any screen size.
@@ -28,9 +28,9 @@ Simple uses a 12 column, fluid 960 grid that scales gracefully with any screen s
 Typography
 ----------------
 
-A set of base styles are used to create a strong typographical hierarchy. The typographical hierarchy is defined by specifying a percentage-based font-size for <h1> through <h6>. 
+A set of base styles are used to create a strong typographical hierarchy. The typographical hierarchy is defined by specifying a percentage-based font-size for "<h1>" through "<h6>". 
 
 Media Queries
 ----------------
 
-Simple uses a set of media queries at 960px, 767px, & 480px. To change the size of your content adjust the .container values using the max-width CSS property. It's best to use percentages at each of the sizes so the grid stays fluid
+Simple uses a set of media queries at 960px, 767px, & 480px. To change the size of your content adjust the .container values using the max-width CSS property. It's best to use percentages at each of the sizes so the grid stays fluid.
