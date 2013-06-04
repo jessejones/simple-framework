@@ -5,10 +5,10 @@
 <link rel="stylesheet" type="text/css" href="css/simple.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/mellow.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Simple is a lightweight, 2kb minified, responsive framework for building websites. Need a framework to help you build websites and web apps fast? You've got it. Welcome to Simple.">
 <meta charset="UTF-8">
 <meta name="keywords" content="HTML, CSS, Simple HTML Framework, Simple CSS Framework, Simple Responsive Framework, Responsive Framework, Easy Responsive Framework, Easy CSS Framework">
+<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
 
 </head>
 <body>
@@ -29,21 +29,21 @@
 		<div id="usage">
 			<h3>Usage</h3>
 			<p>Using Simple is just as easy as the name suggests. After putting a link to <code>simple.css</code> in the <code>&lt;head&gt;</code> of your HTML page, insert a div with a class of <code><span class="tags">.container</span></code> and then add another div with a class of <code><span class="tags">.grid</span>.</code> Add columns by specifying a class of <code><span class="tags">col1</span></code> through <code><span class="tags">col12</span></code>. So for instance if you want a 3 column grid, you would use a 3 divs, each with a class of <code><span class="tags">col4</span></code>. See below for an example.
-			<pre class="prettyprint block"><code class="block">
-			&lt;div class="container"&gt;
-				&lt;div class="grid"&gt;
-					&lt;div class="col4"&gt;
-						Content
-					&lt;/div>	
-					&lt;div class="col4"&gt;
-						Content
-					&lt;/div>	
-					&lt;div class="col4"&gt;
-						Content
-					&lt;/div&gt;												
-				&lt;/div&gt;	
-			&lt;/div&gt;	
-			</code></pre>
+<pre class="prettyprint"><code>
+  &lt;div class="container"&gt;
+    &lt;div class="grid"&gt;
+      &lt;div class="col4"&gt;
+         Content
+       &lt;/div&gt;	
+       &lt;div class="col4"&gt;
+         Content
+       &lt;/div&gt;	
+       &lt;div class="col4"&gt;
+         Content
+       &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
 		</div>
 		<div id="grid">
 			<h3>Grid</h3>
@@ -60,9 +60,8 @@
 			<h6>Heading <span class="subhead">&lt;h6&gt;</span></h6>
 			<p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat est, commodo sed adipiscing non, congue ac magna. In mollis eros at nunc iaculis posuere varius arcu.</p>
 			<blockquote>This is a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat est, commodo sed adipiscing non, congue ac magna. In mollis eros at nunc iaculis posuere varius arcu.</blockquote>		
-
 		</div>	
-		<div id="Media Queries">
+		<div id="mediaqueries">
 			<h3>Media Queries</h3>
 			<p>Simple uses a set of media queries at <code>960px,</code> <code>767px, </code>
 				<code>&#38; 479px.</code> To change the size of your content adjust the <code><span class="tags">.container</span></code> values using the <code><span class="tags">max-width</span></code> CSS property. It's best to use percentages at each of the sizes so the grid stays fluid</p>
@@ -71,7 +70,6 @@
 	<footer class="col12">
 		<p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a> Download or Fork on <a href="https://github.com/jessejones/simple-framework">Github</a></p>	
 	</footer>
-</div>
 </div>
 </div>
 </body>
