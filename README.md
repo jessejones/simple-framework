@@ -28,7 +28,7 @@ Simple uses a 12 column, fluid 960 grid that scales gracefully with any screen s
 Typography
 ----------------
 
-A set of base styles are used to create a strong typographical hierarchy. The typographical hierarchy is defined by specifying a percentage-based font-size for '<h1>' through '<h6>'. 
+A set of base styles are used to create a strong typographical hierarchy. The typographical hierarchy is defined by specifying a percentage-based font-size for '&lt;h1&gt;' through '&lt;h6&lt;'.
 
 Media Queries
 ----------------
