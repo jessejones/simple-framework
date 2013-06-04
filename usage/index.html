@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<title>Simple Framework</title>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="css/simple.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/mellow.css">
+<meta name="description" content="Simple is a lightweight, 2kb minified, responsive framework for building websites. Need a framework to help you build websites and web apps fast? You've got it. Welcome to Simple.">
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, Simple HTML Framework, Simple CSS Framework, Simple Responsive Framework, Responsive Framework, Easy Responsive Framework, Easy CSS Framework">
+
+</head>
+<body>
+<div class="container">
+	<div class="grid">
+	<header class="col12">
+		<h1 class="title">Simple</h1>
+		<p class="tagline">Responsive HTML Framework</p>
+	</header>
+	<div id="sidebar" class="col3">	
+		<nav>
+		<a href="https://github.com/jessejones/simple-framework" class="button">Download</a>	
+		<p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a></p>
+		</nav>
+	</div>
+	<div id="content" class="col8">
+			<p class="intro">Simple is a lightweight, <strong>2kb</strong> minified, responsive framework for building websites. Need a framework to help you build websites and web apps fast? You've got it. Welcome to <strong>Simple.</strong></p> 
+		<div id="usage">
+			<h3>Usage</h3>
+			<p>Using Simple is just as easy as the name suggests. After putting a link to <code>simple.css</code> in the <code>&lt;head&gt;</code> of your HTML page, insert a div with a class of <code><span class="tags">.container</span></code> and then add another div with a class of <code><span class="tags">.grid</span>.</code> Add columns any size you want.
+			<pre class="prettyprint block"><code class="block">
+			&lt;div class="container"&gt;
+				&lt;div class="grid"&gt;
+					&lt;div class="col4"&gt;
+						Content
+					&lt;/div>	
+					&lt;div class="col4"&gt;
+						Content
+					&lt;/div>	
+					&lt;div class="col4"&gt;
+						Content
+					&lt;/div&gt;												
+				&lt;/div&gt;	
+			&lt;/div&gt;	
+			</code></pre>
+		</div>
+		<div id="grid">
+			<h3>Grid</h3>
+			<p>The Simple framework uses a 12 column, fluid 960 grid that scales gracefully with any screen size. Try resizing the browser window.</p>
+		</div>	
+		<div id="typography">
+			<h3>Typography</h3>
+			<p>A set of base styles are used to create a strong typographical hierarchy. The typographical hierarchy is defined by specifying a percentage-based <code><span class="tags">font-size</span></code> for <code><span class="tags">&lt;h1&gt;</span></code> through <code><span class="tags">&lt;h6&gt;</span></code>. See examples below for sample styles:</p>
+			<h1>Heading <span class="subhead">&lt;h1&gt;</span></h1>
+			<h2>Heading <span class="subhead">&lt;h2&gt;</span></h2>
+			<h3>Heading <span class="subhead">&lt;h3&gt;</span></h3>
+			<h4>Heading <span class="subhead">&lt;h4&gt;</span></h4>
+			<h5>Heading <span class="subhead">&lt;h5&gt;</span></h5>
+			<h6>Heading <span class="subhead">&lt;h6&gt;</span></h6>
+			<p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat est, commodo sed adipiscing non, congue ac magna. In mollis eros at nunc iaculis posuere varius arcu.</p>
+			<blockquote>This is a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat est, commodo sed adipiscing non, congue ac magna. In mollis eros at nunc iaculis posuere varius arcu.</blockquote>		
+
+		</div>	
+		<div id="Media Queries">
+			<h3>Media Queries</h3>
+			<p>Simple uses a set of media queries at <code>960px,</code> <code>767px, </code>
+				<code>&#38; 480px.</code> To change the size of your content adjust the <code><span class="tags">.container</span></code> values using the <code><span class="tags">max-width</span></code> CSS property. It's best to use percentages at each of the sizes so the grid stays fluid</p>
+		</div>	
+	</div>		
+	<footer class="col12">
+		<p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a> Download or Fork on <a href="https://github.com/jessejones/simple-framework">Github</a></p>	
+	</footer>
+</div>
+</div>
+</div>
+</body>
+</html>

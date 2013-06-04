@@ -1,0 +1,241 @@
+/*****************************
+
+                                                             
+ ad88888ba  88                                88             
+d8"     "8b ""                                88             
+Y8,                                           88             
+`Y8aaaaa,   88 88,dPYba,,adPYba,  8b,dPPYba,  88  ,adPPYba,  
+  `"""""8b, 88 88P'   "88"    "8a 88P'    "8a 88 a8P_____88  
+        `8b 88 88      88      88 88       d8 88 8PP"""""""  
+Y8a     a8P 88 88      88      88 88b,   ,a8" 88 "8b,   ,aa  
+ "Y88888P"  88 88      88      88 88`YbbdP"'  88  `"Ybbd8"'  
+                                  88                         
+                                  88                         
+
+
+A lightweight HTML framework for rapidly creating websites and web apps.
+
+Created by       :: Jesse Jones
+Version          :: v1
+Last Modified    :: 06/3/13
+http://www.jessejones.me
+
+******************************/
+
+
+/*****************************
+
+Table of Contents 
+
+  -Reset   
+  -Global
+  -Typography
+  -Grid
+  -Media Queries
+
+******************************/
+
+
+/*-----------------------------------*\
+    RESET / NORMALIZE
+\*-----------------------------------*/
+@import url("normalize.css");
+
+/* Default reset is Normalize.css from http://necolas.github.io/normalize.css/
+Created by Nicolas Gallagher and Jonathan Neal. */ 
+
+/*-----------------------------------*\
+    GLOBAL
+\*-----------------------------------*/
+html,
+body {
+  font-size: 100%; 
+}  
+body {
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font: 11px/1.6em; 
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0;    
+  position: relative;  
+  width:100%;  
+}
+
+/*-----------------------------------*\
+    TYPOGRAPHY
+\*-----------------------------------*/
+
+/* Percentage based h1-h6 automatically scale when font-size is changed in body tag.*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2125em; }
+
+h1 {
+  font-size: 218%;
+}
+
+h2 {
+  font-size: 164%;
+}
+
+h3 {
+  font-size: 145%;
+}
+
+h4 {
+  font-size: 118%;
+}
+h5 {
+  font-size:100%;  
+}
+h6 {
+  font-size:82%;  
+}
+.subhead {
+  font-weight:normal;
+  color:#999999;
+}
+
+p {
+  font-size:100%;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1.6em;
+  margin-bottom: 1.25em;
+  text-rendering: optimizeLegibility; 
+}
+blockquote {
+  color:#999999;
+  border-left:6px solid #dddddd;
+  padding-left:14px;
+}
+/*-----------------------------------*\
+    GRID
+\*-----------------------------------*/
+
+/* Change size of container to any size you want. 
+Default is 960px so it works with most computers */
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.grid { 
+  width: 100%;  
+  *zoom: 1;
+}
+.grid:before,
+.grid:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+.grid:after {
+  clear: both;
+}
+.grid [class*="col"] {
+  display: block;
+  float: left;  
+  min-height: 30px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid [class*="col"]:first-child {
+  margin-left: 0;
+}
+.grid [class*="col"] + [class*="col"] {
+  margin-left: 2%;
+}
+.grid .col12 {
+  width: 100%;
+}
+.grid .col11 {
+  width: 91.5%;
+}
+.grid .col10 {
+  width: 82.9%;
+}
+.grid .col9 {
+  width: 74.5%;
+}
+.grid .col8 {
+  width: 65.9%;
+}
+.grid .col7 {
+  width: 57.4%;
+}
+.grid .col6 {
+  width: 48.9%;
+}
+.grid .col5 {
+  width: 40.4%;
+}
+.grid .col4 {
+  width: 31.9%;
+}
+.grid .col3 {
+  width: 23.4%;
+}
+.grid .col2 {
+  width: 14.9%;
+}
+.grid .col1 {
+  width: 6.4%;
+}
+
+/*-----------------------------------*\
+    MEDIA QUERIES
+\*-----------------------------------*/
+
+/* Mobile */
+@media (max-width: 479px) {
+  .container {
+    max-width:90%;
+  }
+  .grid [class*="col"] {   
+      margin-left:0px;
+    }
+}
+
+/* Small Tablet */
+@media (min-width: 479px) and (max-width:767px) {
+  .container {
+    max-width:90%;
+  }
+  .grid [class*="col"] {   
+      margin-left:0px;    
+    }  
+}
+/* Tablet */
+@media (max-width:767px) {
+  .container {
+    max-width:90%;
+  }
+  .grid [class*="col"] {   
+      width:100%;    
+    }    
+}
+/* Laptop / Desktop */
+@media (max-width:960px) {
+  .container {
+    max-width:90%;
+  }
+}
+/* Large Screen*/
+@media (min-width:960px) {
+  .container {
+    max-width:960px;
+  }
+  .grid {
+  }
+}
