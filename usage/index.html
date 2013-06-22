@@ -2,8 +2,8 @@
 <head>
 <title>Simple Framework</title>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-<link rel="stylesheet" type="text/css" href="css/simple.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.min.css">
+<link rel="stylesheet" type="text/css" href="css/simple.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/mellow.css">
 <meta name="description" content="Simple is a lightweight, 2kb minified, responsive framework for building websites. Need a framework to help you build websites and web apps fast? You've got it. Welcome to Simple.">
 <meta charset="UTF-8">
@@ -17,25 +17,29 @@
 </head>
 <body>
 <div class="container">
-	<div class="grid">
+  <div class="row">
 	<header class="col12">
-		<h1 class="title">Simple</h1>
-		<p class="tagline">Responsive HTML Framework</p>
+	  <h1 class="title">Simple</h1>
+	  <p class="tagline">Responsive HTML Framework</p>
 	</header>
-	<div id="sidebar" class="col3">	
-		<nav>
-		<a href="https://github.com/jessejones/simple-framework" class="button">Download</a>	
+  </div>
+  <div class="row">
+    <div id="sidebar" class="col3 right">
+	  <nav>
+	    <a href="https://github.com/jessejones/simple-framework" class="button">Download</a>	
 		<p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a></p>
-		</nav>
-	</div>
-	<div id="content" class="col8">
-			<p class="intro">Simple is a lightweight, <strong>2kb</strong> minified, responsive framework for building websites and web applications. Need a framework to help you build things fast? You've got it. Welcome to <strong>Simple.</strong></p> 
-		<div id="usage">
-			<h3>Usage</h3>
-			<p>Using Simple is just as easy as the name suggests. After putting a link to <code>simple.css</code> in the <code>&lt;head&gt;</code> of your HTML page, insert a div with a class of <code><span class="tags">.container</span></code> and then add another div with a class of <code><span class="tags">.grid</span>.</code> Add columns by specifying a class of <code><span class="tags">col1</span></code> through <code><span class="tags">col12</span></code>. So for instance if you want a 3 column grid, you would use 3 divs, each with a class of <code><span class="tags">col4</span></code>. See below for an example.
+<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://simplehtmlframework.com" data-text="Check out Simple, a lightweight responsive framework" data-via="JesseDesigns">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>	  
+	  </nav>    
+    </div>
+    <div class="col8 last">
+	  <p class="intro">Simple is a lightweight, <strong>2kb</strong> minified, responsive framework for building websites and web applications. Need a framework to help you build things fast? You've got it. Welcome to <strong>Simple.</strong></p> 
+	  <div id="usage">
+	    <h3>Usage</h3>
+		<p>Using Simple is just as easy as the name suggests. After putting a link to <code>simple.css</code> in the <code>&lt;head&gt;</code> of your HTML page, insert a div with a class of <code><span class="tags">.container</span></code> and then add another div with a class of <code><span class="tags">.row</span>.</code> Add columns by specifying a class of <code><span class="tags">col1</span></code> through <code><span class="tags">col12</span></code>. So for instance if you want a 3 column grid, you would use 3 divs, each with a class of <code><span class="tags">col4</span></code>. See below for an example.
 <pre class="prettyprint"><code>
   &lt;div class="container"&gt;
-    &lt;div class="grid"&gt;
+    &lt;div class="row"&gt;
       &lt;div class="col4"&gt;
          Content
        &lt;/div&gt;	
@@ -89,7 +93,7 @@
       &lt;li&gt;Item4&lt;/li&gt;
     &lt;/ul&gt;	
   &lt;/nav&gt;
-</pre></code>	
+</code></pre>	
 			<h4>Vertical Navigation</h4>
       <p>Defines a vertical navigation menu.</p>
 			<p><code>Preview</code></p>
@@ -111,18 +115,22 @@
       &lt;li&gt;Item4&lt;/li&gt;
     &lt;/ul&gt; 
   &lt;/nav&gt;
-</pre></code>			
+</code></pre>			
 		</div>	
     <div id="mediaqueries">
       <h3>Media Queries</h3>
       <p>Simple uses a set of media queries at <code>960px,</code> <code>767px, </code>
         <code>&#38; 479px.</code> To change the size of your content adjust the <code><span class="tags">.container</span></code> values using the <code><span class="tags">max-width</span></code> CSS property. It's best to use percentages at each of the sizes so the grid stays fluid</p>
-    </div>    
-	</div>		
-	<footer class="col12">
-		<p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a> Download or Fork on <a href="https://github.com/jessejones/simple-framework">Github</a></p>	
-	</footer>
-</div>
+    </div>     
+    </div>  
+  </div>	  
+  <div class="row">
+  <footer class="col12">
+    <p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a> Download or Fork on <a href="https://github.com/jessejones/simple-framework">Github</a></p>
+<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://simplehtmlframework.com" data-text="Check out Simple, a lightweight responsive framework" data-via="JesseDesigns">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>	    	
+  </footer>
+  </div>
 </div>
 </body>
 </html>
