@@ -7,14 +7,14 @@ Usage
 Using Simple is just as easy as the name suggests. After putting a link to simple.css in the &lt;head&gt; of your HTML page, insert a div with a class of .container and then add another div with a class of .grid. Add columns by specifying a class of col1 through col12. So for instance if you want a 3 column grid, you would use a 3 divs, each with a class of col4. See below for an example.
 
 	<div class="container">
-		<div class="grid">
+		<div class="row">
 			<div class="col4">
 				Content
 			</div>	
 			<div class="col4">
 				Content
 			</div>	
-			<div class="col4">
+			<div class="col4 last">
 				Content
 			</div>								
 		</div>	
