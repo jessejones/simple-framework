@@ -5,8 +5,8 @@ body {
 }
 
 header {
-		background-color: #E83A23;
-/*	background-color: #E6604E;
+/*		background-color: #E83A23;
+*//*	background-color: #E6604E;
 */	
 
 	color:#ffffff;
@@ -25,13 +25,23 @@ header {
 }
 
 h1.title {
-	font-weight:400;
+	color:#1b1b1b;
+	font-weight:700;
+	font-size:28px;
 	letter-spacing: -1px;
 	margin-top:0px;
 	padding-top:0px;
+	position:relative;
+}
+
+h1.title span {
+	position:absolute;
+	top:1px;
 }
 
 h1.title img {
+background-color:#E83A23;	
+border:solid 5px #E83A23;
 height:26px;
 margin-right:10px;
 }
@@ -73,7 +83,7 @@ span.subhead {color:#999999;}
 .button {
 	margin-top:22px;
 	padding:20px;
-	background-color:#E6604E;
+	background-color:#E83A23;	
 	color:#ffffff;
 	text-decoration:none;
 	display:block;
@@ -81,7 +91,7 @@ span.subhead {color:#999999;}
 	font-weight:bold;
 }
 .button:hover {
-	background-color:#E83A23;
+	background-color:#E6604E;	
 }
 
 code {
