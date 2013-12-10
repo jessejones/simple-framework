@@ -2,9 +2,9 @@
 <head>
 <title>Simple Framework</title>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-<link rel="stylesheet" type="text/css" href="css/simple.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/mellow.css">
+<link rel="stylesheet" type="text/css" href="simple.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css">
+ --><link rel="stylesheet" type="text/css" href="mellow.css">
 <meta name="description" content="Simple is a lightweight, 2kb minified, responsive framework for building websites. Need a framework to help you build websites and web apps fast? You've got it. Welcome to Simple.">
 <meta charset="UTF-8">
 <meta name="keywords" content="HTML, CSS, Simple HTML Framework, Simple CSS Framework, Simple Responsive Framework, Responsive Framework, Easy Responsive Framework, Easy CSS Framework">
@@ -17,47 +17,43 @@
 </head>
 <body>
 <div class="container">
-  <div class="row">
-	<header class="col12">
-	  <h1 class="title">Simple</h1>
-	  <p class="tagline">Responsive HTML Framework</p>
-	</header>
+<div class="row">
+  <div class="col w1-2">
+    <h3>1/2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div class="row">
-	<div id="sidebar" class="col4">	
-	  <nav>
-	    <a href="https://github.com/jessejones/simple-framework" class="button">Download</a>	
-		<p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a></p>
-	  </nav>
-	</div>
-    <div id="content" class="col8">
-	  <p class="intro">Simple is a lightweight, <strong>2kb</strong> minified, responsive framework for building websites and web applications. Need a framework to help you build things fast? You've got it. Welcome to <strong>Simple.</strong></p> 
-	  <div id="usage">
-	    <h3>Usage</h3>
-		<p>Using Simple is just as easy as the name suggests. After putting a link to <code>simple.css</code> in the <code>&lt;head&gt;</code> of your HTML page, insert a div with a class of <code><span class="tags">.container</span></code> and then add another div with a class of <code><span class="tags">.row</span>.</code> Add columns by specifying a class of <code><span class="tags">col1</span></code> through <code><span class="tags">col12</span></code>. So for instance if you want a 3 column grid, you would use 3 divs, each with a class of <code><span class="tags">col4</span></code>. See below for an example.
-<pre class="prettyprint"><code>
-  &lt;div class="container"&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="col4"&gt;
-         Content
-       &lt;/div&gt;	
-       &lt;div class="col4"&gt;
-         Content
-       &lt;/div&gt;	
-       &lt;div class="col4"&gt;
-         Content
-       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-</code></pre>
-	  </div>
-	</div>
-  </div>	  
-  <div class="row">
-  <footer class="col12">
-    <p class="author">Built by <a href="http://www.jessejones.me">Jesse Jones.</a> Download or Fork on <a href="https://github.com/jessejones/simple-framework">Github</a></p>	
-  </footer>
+  <div class="col w1-4">
+    <h3>1/4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
+  <div class="col w1-4 lastCol">
+    <h3>1/4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>  
+</div>
+<div class="row">
+  <div class="col w2-3">
+    <h3>2/3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="col w1-3 lastCol">
+    <h3>1/3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col w2-3">
+    <h3>2/3</h3>
+    <div class="col w1-2 lastCol">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>      
+  </div>
+  <div class="col w1-3 lastCol">
+    <h3>1/3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+
 </div>
 </body>
 </html>
