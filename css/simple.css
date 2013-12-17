@@ -1,25 +1,12 @@
 /*****************************
-                                                             
- ad88888ba  88                                88             
-d8"     "8b ""                                88             
-Y8,                                           88             
-`Y8aaaaa,   88 88,dPYba,,adPYba,  8b,dPPYba,  88  ,adPPYba,  
-  `"""""8b, 88 88P'   "88"    "8a 88P'    "8a 88 a8P_____88  
-        `8b 88 88      88      88 88       d8 88 8PP"""""""  
-Y8a     a8P 88 88      88      88 88b,   ,a8" 88 "8b,   ,aa  
- "Y88888P"  88 88      88      88 88`YbbdP"'  88  `"Ybbd8"'  
-                                  88                         
-                                  88                         
-
-
-A lightweight HTML framework for rapidly creating websites and web apps.
+                                                                                    
+Simple:
+A lightweight CSS framework for rapidly creating websites and web apps.
 
 Created by       :: Jesse Jones
 Version          :: v1
-Last Modified    :: 06/3/13
+Last Modified    :: 12/17/13
 http://www.jessejones.me
-
-/*****************************
 
 Table of Contents 
 
@@ -47,10 +34,10 @@ Created by Nicolas Gallagher and Jonathan Neal. */
 html,
 body {font-size: 100%;}  
 body {
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size:100%;
   font-style: normal;
-  font: 11px/1.6em; 
+  font-weight: normal;
   padding: 0;    
   text-rendering: optimizeLegibility;   
 }
@@ -61,10 +48,7 @@ body {
 
 /* Percentage based h1-h6 automatically scale when font-size is changed in body tag.*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
   line-height: 1.2125em; 
@@ -76,6 +60,11 @@ h4 {font-size: 118%;}
 h5 {font-size:100%;}
 h6 {font-size:82%;}
 
+h1, h2, h3, h4, h5, h6 {
+  padding:0px 12px 0px 12px;
+  word-wrap: break-word;  
+}
+
 .subhead {
   font-weight:200;
   color:#999999;
@@ -83,24 +72,19 @@ h6 {font-size:82%;}
 
 p {
   font-size:100%;
-  font-family: inherit;
   font-weight: normal;
   line-height: 1.6em;
   margin-bottom: 1.25em;
-  text-rendering: optimizeLegibility; 
+  padding: 0px 12px 12px 12px;  
+  word-wrap: break-word;    
 }
-blockquote {
-  color:#999999;
-  line-height:1.6em;
-  border-left:6px solid #dddddd;
-  padding-left:14px;
-}
+
 /*-----------------------------------*\
     GRID
 \*-----------------------------------*/
 
 /* Change size of container to any size you want. 
-Default is 960px so it works with most computers */
+Default is 960px for desktop and scales down with media-queries */
 
 .container {
   max-width: 960px;
@@ -108,55 +92,49 @@ Default is 960px so it works with most computers */
   padding: 0;  
 }
 
+.row:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 .row {
 	clear: both;
 	padding: 0 10px;
 }
 
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
-	float: left;
-	margin: 0 3% 0 0;
+.col{
+  float:left;  
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+  overflow: hidden;  
 }
 
-.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
-	margin: 0;
-}
+.w1-1 {float:none;}
+.w1-2 {width:50%;}
+.w1-3 {width:33.333333%;width:calc(100% / 3);}
+.w2-3 {width:66.666666%;width:calc(100% / 3 * 2);}
+.w1-4 {width:25%;}
+.w3-4 {width:75%;}
+.w1-5 {width:20%;}
+.w2-5 {width:40%;}
+.w3-5 {width:60%;}
+.w4-5 {width:80%;}
 
-.col1 { width: 5.5%; }
-.col2 { width: 14%; }
-.col3 { width: 22.5%; }
-.col4 { width: 31%; }
-.col5 { width: 39.5%; }
-.col6 { width: 48%; }
-.col7 { width: 56.5%; }
-.col8 { width: 65%; }
-.col9 { width: 73.5%; }
-.col10 { width: 82%; }
-.col11 { width: 90.5%; }
-.col12 { width: 100%; margin: 0; }
-
-.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
+.lastCol {display: table-cell;float:none;width:auto;}
+.col1-1 img, .col1-2 img, .col1-3 img, .col2-3 img, .col1-4 img, .col3-4 img, .col1-5 img, .col2-5 img, .col3-5 img, .col4-5 img {
 	width: 100%;
 	height: auto;
 	display: block;
 }
 
 /*-----------------------------------*\
-    NAVIGATION
+    List Styles
 \*-----------------------------------*/
-ul.nav {list-style-type:none;}
 
-ul.nav.horizontal {
+ul.horizontal, ul.vertical {
+  list-style-type:none;  
   margin-left:0px;
   padding-left:0px;  
 }
 
-ul.nav.horizontal li {display: inline;}
-
-ul.nav.vertical {
-  margin-left:0px;
-  padding-left:0px;
-} 
+ul.horizontal li {display: inline;}
 
 /*-----------------------------------*\
     MEDIA QUERIES
@@ -167,12 +145,12 @@ ul.nav.vertical {
 	.container .row {padding: 0;}
 }
 @media all and (max-width: 960px) {
-.container {max-width:90%;}
+.container {max-width:100%;}
 }
 
-@media all and (max-width: 768px) {
-	.row {}
-	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
+@media all and (max-width: 678px) {
+	.row {max-width:90%}
+	.w1-1, .w1-2, .w1-3, .w2-3, .w1-4, .w3-4, .w1-5, .w2-5, .w3-5, .w4-5 {
 		float: none;
 		margin:0;
 		width: 100%;
