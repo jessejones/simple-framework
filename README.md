@@ -4,7 +4,7 @@ simple-framework
 Usage
 ----------------
 
-Using Simple is just as easy as the name suggests. After putting a link to simple.css in the &lt;head&gt; of your HTML page, insert a div with a class of .container and then add another div with a class of .row. Add columns by writing w— stands for width—followed by a fractional value such as 1-3. So for instance if you want a 3 column grid, you would use 3 divs, each with a class of w1-3. See below for an example.
+Using Simple is just as easy as the name suggests. After putting a link to simple.css in the &lt;head&gt; of your HTML page, insert a div with a class of .container and then add another div with a class of .row. Add columns by writing w— stands for width—followed by a fractional value such as 1-3, e.g. w1-3. So let's say you want a 3 column grid, you would use 3 divs, each with a class of w1-3. See below for an example.
 
 	<div class="container">
 		<div class="row">
@@ -23,7 +23,7 @@ Using Simple is just as easy as the name suggests. After putting a link to simpl
 Grid
 ----------------
 
-Simple uses a fluid 960 grid that scales gracefully with any screen size. The container element can be changed to any width desired and percentage based columns will adjust accordingly.
+Simple uses a fluid 960 grid that scales gracefully with any screen size. The container element can be changed to any width desired and percentage based columns will adjust accordingly. Simple's grid also allows the nesting of columns which makes it easier to create complex layouts. Try it.
 
 Typography
 ----------------
