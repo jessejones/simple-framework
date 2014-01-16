@@ -4,7 +4,7 @@ simple-framework
 Usage
 ----------------
 
-Using Simple is just as easy as the name suggests. After putting a link to simple.css in the <head> of your HTML page, insert a div with a class of .container and then add another div with a class of .row. Add columns by writing .col and a width value such as w1-3. So let's say you want a 3 column grid, you would use 3 divs, each with a class of w1-3. See below for an example.
+Using Simple is just as easy as the name suggests. After putting a link to simple.css in the <head> of your HTML page, insert a div with a class of .container and then add another div with a class of .row. Add columns by writing .col and a width value such as w1-3. So let's say you want a 3 column grid, you would use 3 divs, each with a class of col w1-3. See below for an example.
 
 	<div class="container">
 		<div class="row">
